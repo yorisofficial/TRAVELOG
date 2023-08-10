@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Circular Std";
+    src: url("/public/font/CircularStd-Bold.woff") format("woff");
+  }
+
+  html {
+    font-family: inter;
+  }
+
+  h1 {
+    font-family: Circular Std;
+  }
+}
+
+.padding-mx {
+  @apply px-4 md:px-8 xl:px-32 py-6;
+}
+
+.rounded-card {
+  border-radius: 32px;
+}

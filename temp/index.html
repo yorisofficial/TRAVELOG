@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Tailwind CSS -->
+        <link rel="stylesheet" href="/dist/output.css">
+        <!-- Alpine JS -->
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <section id="" class="w-full h-full padding-mx border-2 border-red-500">
+            <div x-data="{
+            dataHoliday: 1, // Ubah dataHoliday ke 0 agar indeks dimulai dari 0
+            maxItems: 3,
+            allData: [
+                {
+                    id: 1,
+                    price: '$550.16',
+                    name: 'Paradise Beach, Bantayan Island',
+                    location: 'Rome, Italy',
+                    star: '4.8',
+                    imageUrl: '/public/img/pricelist/img-1.png',
+                    
+                },
+                {
+                    id: 2,
+                    price: '$20.99',
+                    name: 'Ocean with full of Colors',
+                    location: 'Maldives',
+                    star: 4.8,
+                    imageUrl: '/public/img/pricelist/img-2.png',
+                },
+                {
+                    id: 3,
+                    price: '$100.99',
+                    name: 'Ocean with full of Colors',
+                    location: 'Maldives',
+                    star: 4.8,
+                    imageUrl: '/public/img/pricelist/img-3.png',
+                },
+                {
+                    id: 4,
+                    price: '$550.16',
+                    name: 'Paradise Beach, Bantayan Island',
+                    location: 'Rome, Italy',
+                    star: '4.8',
+                    imageUrl: '/public/img/pricelist/img-1.png',
+                    
+                },
+                {
+                    id: 5,
+                    price: '$20.99',
+                    name: 'Ocean with full of Colors',
+                    location: 'Maldives',
+                    star: 4.8,
+                    imageUrl: '/public/img/pricelist/img-2.png',
+                },
+                {
+                    id: 6,
+                    price: '$100.99',
+                    name: 'Ocean with full of Colors',
+                    location: 'Maldives',
+                    star: 4.8,
+                    imageUrl: '/public/img/pricelist/img-3.png',
+                },
+            ]
+        }" class="container w-full h-full flex flex-col mx-auto border-2 border-red-500 px-4 py-8 gap-8">
+                <!-- navigasi -->
+                <div class="header-content w-full justify-center items-center text-center">
+                    <h3 class="uppercase text-base font-semibold">Top Destination</h3>
+                    <h1 class="text-3xl font-bold">Explore top destination</h1>
+                </div>
+                <div class="body-content flex w-full justify-between md:justify-center md:gap-6 items-center">
+                    <button x-on:click="dataHoliday = dataHoliday === 1 ? allData.length : dataHoliday - 1" class="bg-white text-black p-4 flex rounded-full border-2 border-black border-opacity-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                        </svg>
+                    </button>
+                    <button x-on:click="dataHoliday = dataHoliday === allData.length ? 1 : dataHoliday + 1" class="bg-primary text-white p-4 flex rounded-full border-2 border-black border-opacity-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="w-full flex mx-auto justify-center border gap-4 p-4">
+                    <!-- Card -->
+                    <template x-for="index in maxItems" :key="index">
+                        <div x-show="allData[dataHoliday + index - 1]" class="w-[320px] border-2 rounded-xl">
+                            <div class="">
+                                <img :src="allData[dataHoliday + index - 1].imageUrl" alt="img" class="rounded-t-xl">
+                            </div>
+                            <div class="p-8">
+                                <h1 x-text="allData[dataHoliday + index - 1].price" class="text-base uppercase font-bold text-primary"></h1>
+                                <h1 x-text="allData[dataHoliday + index - 1].name" class="text-3xl font-bold"></h1>
+                                <p x-text="allData[dataHoliday + index - 1].location" class="text-base"></p>
+                                <p class="text-base font-bold text-orange-500 flex items-center gap-2 mt-4">
+                                    <span x-text="allData[dataHoliday + index - 1].star" class="text-xl"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                                    </svg>
+                                </p>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+                <!-- slider-button -->
+                <div class="slider-button w-full flex gap-4 items-center justify-center px-4 py-5">
+                    <template x-for="index in maxItems" :key="index">
+                        <button x-bind:class="{
+                    'bg-opacity-100' : dataHoliday === index,
+                    'bg-opacity-10' : dataHoliday !== index,
+                    }" x-on:click="dataHoliday = cardItem.id" class="p-2 bg-primary bg-opacity-10 hover:bg-opacity-100 transition-all rounded-full"></button>
+                    </template>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

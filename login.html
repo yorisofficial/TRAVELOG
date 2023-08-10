@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Alpine Js -->
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+        <!-- Tailwind css -->
+        <link rel="stylesheet" href="/dist/output.css">
+        <title>Login Page</title>
+    </head>
+    <body>
+        <main>
+            <div x-data="{userAuth : true}" class="w-full h-screen flex justify-center items-center">
+                <!-- Login form -->
+                <div x-bind:class="userAuth ? 'hidden' : '' " class="relative flex flex-col p-10 border-2 w-[400px] xl:w-[500px] rounded-md bg-white drop-shadow-xl">
+                    <a href="/index.html" class="absolute top-0 right-0 -translate-y-5 translate-x-5 bg-primary p-4 rounded-full text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </a>
+                    <h1 class="font-bold text-3xl text-center text-primary">Login Page</h1>
+                    <form action="" class="w-full h-full mt-10">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex flex-col">
+                                <label for="" class="text-primary font-semibold">Email</label>
+                                <input type="email" class="border-2 mt-2 p-2" placeholder="masukan email" required>
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="" class="text-primary font-semibold">Password</label>
+                                <input type="password" class="border-2 mt-2 p-2" placeholder="masukan password" required>
+                            </div>
+                            <div class="flex items-center mt-10 gap-2">
+                                <button type="submit" class="px-6 py-3 bg-primary text-white rounded-md border-2 border-primary">Masuk</button>
+                                <button x-on:click="userAuth = true" class="px-6 py-3 border-2 border-primary text-primary rounded-md">Daftar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Regiester form -->
+                <div x-show="userAuth" class="relative flex flex-col p-10 border-2 w-[400px] xl:w-[500px] rounded-md bg-white drop-shadow-xl">
+                    <a href="/index.html" class="absolute top-0 right-0 -translate-y-5 translate-x-5 bg-primary p-4 rounded-full text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </a>
+                    <h1 class="font-bold text-3xl text-center text-primary">Register Page</h1>
+                    <form action="" class="w-full h-full mt-10">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex flex-col">
+                                <label for="" class="text-primary font-semibold">Email</label>
+                                <input type="email" class="border-2 mt-2 p-2" placeholder="masukan email" required>
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="" class="text-primary font-semibold">Username</label>
+                                <input type="text" class="border-2 mt-2 p-2" placeholder="masukan username" required>
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="" class="text-primary font-semibold">Password</label>
+                                <input type="password" class="border-2 mt-2 p-2" placeholder="masukan password" required>
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="" class="text-primary font-semibold">Konfirmasi Password</label>
+                                <input type="password" class="border-2 mt-2 p-2" placeholder="konfirmasi password" required>
+                            </div>
+                            <div class="mt-10 flex gap-2">
+                                <button type="submit" class="px-8 py-3 bg-primary text-white rounded-md border-2 border-primary">Daftar</button>
+                                <button x-on:click="userAuth = false" class="px-8 py-3 border-2 border-primary rounded-md text-primary">Masuk</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
