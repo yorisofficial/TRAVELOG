@@ -649,8 +649,16 @@ h1 {
   inset: -0.25rem;
 }
 
+.-left-10 {
+  left: -2.5rem;
+}
+
 .-right-32 {
   right: -8rem;
+}
+
+.-top-10 {
+  top: -2.5rem;
 }
 
 .end-1 {
@@ -671,6 +679,10 @@ h1 {
 
 .top-1\/4 {
   top: 25%;
+}
+
+.top-10 {
+  top: 2.5rem;
 }
 
 .isolate {
@@ -2003,6 +2015,11 @@ h1 {
   background-color: rgb(248 94 159 / var(--tw-bg-opacity));
 }
 
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -2015,11 +2032,6 @@ h1 {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-
-.bg-slate-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-10 {
@@ -2914,19 +2926,14 @@ h1 {
   font-weight: 700;
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-blue-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
 .hover\:text-blue-400:hover {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:text-opacity-100:hover {
