@@ -13,6 +13,7 @@ module.exports = {
         'primary-hover': '#4A3CBA',
         'secondary': '#F85E9F',
         'orange': '#FF5722',
+        'creamy': 'rgba(250, 205, 73, 0.08)',
       }
     },
   },

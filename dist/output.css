@@ -669,12 +669,12 @@ h1 {
   top: 25%;
 }
 
-.top-1\/2 {
-  top: 50%;
+.-top-10 {
+  top: -2.5rem;
 }
 
-.top-10 {
-  top: 2.5rem;
+.-left-10 {
+  left: -2.5rem;
 }
 
 .isolate {
@@ -938,8 +938,8 @@ h1 {
   width: 100%;
 }
 
-.w-\[1185px\] {
-  width: 1185px;
+.w-1\/2 {
+  width: 50%;
 }
 
 .flex-shrink {
@@ -1991,6 +1991,10 @@ h1 {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-creamy {
+  background-color: rgba(250, 205, 73, 0.08);
+}
+
 .bg-orange {
   --tw-bg-opacity: 1;
   background-color: rgb(255 87 34 / var(--tw-bg-opacity));
@@ -2166,6 +2170,11 @@ h1 {
   padding: 2rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2191,6 +2200,11 @@ h1 {
   padding-bottom: 0.75rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2209,11 +2223,6 @@ h1 {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
 .pb-16 {
@@ -2481,16 +2490,16 @@ h1 {
   -moz-osx-font-smoothing: auto;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .opacity-100 {
   opacity: 1;
 }
 
 .opacity-40 {
   opacity: 0.4;
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .bg-blend-normal {
@@ -2764,16 +2773,16 @@ h1 {
   transition-duration: 150ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .duration-500 {
   transition-duration: 500ms;
 }
 
 .duration-700 {
   transition-duration: 700ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
 }
 
 .ease-in {
@@ -3026,6 +3035,10 @@ h1 {
     grid-column: span 1 / span 1;
   }
 
+  .xl\:m-32 {
+    margin: 8rem;
+  }
+
   .xl\:flex {
     display: flex;
   }
@@ -3108,6 +3121,11 @@ h1 {
   .xl\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .xl\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .xl\:text-start {
