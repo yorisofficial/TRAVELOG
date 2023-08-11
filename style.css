@@ -1,0 +1,8 @@
+@media (min-width: 785px) {
+  .content-testimonial {
+    background-image: url("/public/img/background/Vector-abstrack.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

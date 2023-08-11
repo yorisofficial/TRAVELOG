@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- Tailwind CSS -->
         <link rel="stylesheet" href="/dist/output.css">
         <!-- SwiperJs -->
@@ -11,14 +13,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
         <title>TRAVLOG</title>
     </head>
     <body class="scroll-smooth">
         <header class="border-2">
             <nav x-data="{ navBar : false, isScrolled : false }" x-on:click.outside="navBar = false" x-init="window.addEventListener('scroll', () => {
                  isScrolled = (window.scrollY > 100); })" x-bind:class="{ 
-                    'fixed bg-white drop-shadow-xl': isScrolled, 'sticky': !isScrolled 
-                }" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="w-full sticky top-0 z-10 padding-mx xl:flex">
+                    'fixed bg-transparent backdrop-blur-xl drop-shadow-xl top-0': isScrolled, 'sticky': !isScrolled 
+                }" class="w-full sticky top-0 z-10 padding-mx xl:flex ">
                 <!-- Logo & mobile -->
                 <div class="flex justify-between items-center w-full xl:w-fit">
                     <button x-on:click="navBar = !navBar" class="md:order-1 order-2 p-3 bg-primary hover:bg-primary-hover rounded-xl md:flex items-center text-white xl:hidden transform duration-700">
@@ -74,10 +77,10 @@
             <section id="items-1" class="w-full h-full flex justify-center items-center padding-mx">
                 <div class="container">
                     <div class="grid grid-cols-1 xl:grid-cols-2 py-8 items-center justify-center">
-                        <div class="herosection flex xl:order-2 z-5">
+                        <div class="herosection flex xl:order-2 z-5" data-aos="fade-left">
                             <img src="/public/img/hero-img.svg" alt="hero-images" height="100%" width="100%">
                         </div>
-                        <div class="flex flex-col w-full xl:w-3/4">
+                        <div class="flex flex-col w-full xl:w-3/4" data-aos="fade-right">
                             <div class="w-full flex justify-center xl:justify-start">
                                 <button class="text-base font-semibold px-8 py-4 bg-white text-secondary flex rounded-full drop-shadow-xl hover:bg-secondary hover:text-white transform duration-700">Explore the world! <span class="ml-4">
                                         <svg x-show="starReview1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -122,11 +125,11 @@
                         </div>
                     </div>
             </section>
-            <section id="items-2" class="w-full h-full padding-mx">
-                <div class="container w-full mx-auto flex flex-col md:flex-row gap-8 md:gap-16 xl:gap-0 py-8 md:py-16">
-                    <div class="header-content xl:w-2/3 flex flex-col justify-center text-center gap-4">
-                        <h3 class="xl:text-start text-base font-semibold text-secondary uppercase">Services</h3>
-                        <h1 class="xl:text-start text-3xl font-bold">Our top value categories for you</h1>
+            <section id="" class="w-full h-full padding-mx">
+                <div class="container w-full mx-auto flex flex-col xl:flex-row gap-8 md:gap-16 xl:gap-0 py-8 md:py-16">
+                    <div class="header-content xl:w-3/4 flex flex-col justify-center text-center gap-4">
+                        <h3 class="header-tittle-base">Services</h3>
+                        <h1 class="header-tittle">Our top value categories for you</h1>
                     </div>
                     <div class="body-content flex">
                         <div class="w-full h-full flex flex-col md:flex-row gap-8 md:gap-4">
@@ -162,11 +165,11 @@
                 </div>
             </section>
             <!-- Service / pricing -->
-            <section id="items-3" class="w-full h-full padding-mx">
+            <section id="items-2" class="w-full h-full padding-mx">
                 <div class="container flex flex-col gap-8 py-8">
                     <div class="header flex flex-col gap-4">
-                        <h1 class="text-base uppercase text-secondary tracking-[3.2px] text-center">Top Destination</h1>
-                        <h1 class="text-3xl font-bold text-center">Explore top destination</h1>
+                        <h3 class="header-tittle-base">Top Destination</h3>
+                        <h1 class="header-tittle">Explore top destination</h1>
                     </div>
                     <div class="body h-full">
                         <div class="card grid grid-cols-1 xl:h-full md:grid-cols-3 gap-8 md:gap-4">
@@ -174,7 +177,7 @@
                                 <img src="/public/img/pricelist/img-1.png" alt="card-img" class="w-full bg-center bg-no-repeat">
                                 <div class="flex flex-col p-8 bg-white h-full border-2 rounded-b-[32px]">
                                     <div class="flex flex-col gap-4 h-full">
-                                        <h1 class="text-2xl font-bold text-secondary">$550.16</h1>
+                                        <h1 class="text-2xl font-bold text-secondary" data-aos="zoom-in">$550.16</h1>
                                         <h1 class="text-xl font-bold">Paradise Beach, Bantayan Island</h1>
                                     </div>
                                     <p class="text-base">Rome, Italy</p>
@@ -190,7 +193,7 @@
                                 <img src="/public/img/pricelist/img-2.png" alt="card-img" class="w-full bg-center bg-no-repeat xl:h-[288px]">
                                 <div class="flex flex-col p-8 bg-white h-full border-2 rounded-b-[32px]">
                                     <div class="flex flex-col gap-4 h-full">
-                                        <h1 class="text-2xl font-bold text-secondary">$20.99</h1>
+                                        <h1 class="text-2xl font-bold text-secondary" data-aos="zoom-in">$20.99</h1>
                                         <h1 class="text-xl font-bold">Ocean with full of Colors</h1>
                                     </div>
                                     <p class="text-base">Maldives</p>
@@ -206,7 +209,7 @@
                                 <img src="/public/img/pricelist/img-3.png" alt="card-img" class="w-full bg-center bg-no-repeat">
                                 <div class="flex flex-col p-8 bg-white h-full border-2 rounded-b-[32px]">
                                     <div class="flex flex-col gap-4 h-full">
-                                        <h1 class="text-2xl font-bold text-secondary">$150.99</h1>
+                                        <h1 class="text-2xl font-bold text-secondary" data-aos="zoom-in">$150.99</h1>
                                         <h1 class="text-xl font-bold">Mountain View, Above the cloud</h1>
                                     </div>
                                     <p class="text-base">United Arab Emeries </p>
@@ -224,18 +227,18 @@
             </section>
             <section class="w-full h-full relative padding-mx">
                 <div class="container w-full flex flex-col xl:flex-row gap-16 xl:py-16">
-                    <div class="w-full">
+                    <div class="w-full" data-aos="fade-right">
                         <img src="/public/img/dream-img.png" alt="TopDestination">
                     </div>
-                    <div class="xl:w-2/3 flex flex-col gap-16">
+                    <div class="xl:w-2/3 flex flex-col gap-16" data-aos="zoom-in">
                         <div class="flex flex-col gap-8">
                             <div class="flex flex-col gap-4">
-                                <h1 class="text-base uppercase text-secondary tracking-[3.2px] text-center xl:text-start">Travel Point</h1>
-                                <h1 class="text-3xl font-bold text-center xl:text-start xl:w-3/4">We helping you find your dream location</h1>
+                                <h3 class="header-tittle-base">Travel Point</h3>
+                                <h1 class="header-tittle">We helping you find your dream location</h1>
                             </div>
                             <p class="text-base text-center xl:text-start opacity-40">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
                         </div>
-                        <div class="grid grid-cols-1 w-full gap-8">
+                        <div class="grid grid-cols-1 w-full gap-8" data-aos="zoom-in" data-aos-delay="100">
                             <div class="grid w-full grid-cols-2 xl:grid-cols-2 gap-8">
                                 <div class="card-detail w-full flex flex-col items-center justify-center rounded-card p-8 bg-white hover:drop-shadow-xl transform duration-700 border">
                                     <div class="text-center flex flex-col gap-4">
@@ -269,22 +272,22 @@
                 </div>
             </section>
             <!-- Key features -->
-            <section id="items-4" class="w-full h-full padding-mx py-16">
-                <div class="container grid grid-cols-1 xl:grid-cols-2 gap-8 p-8">
-                    <div class="xl:order-2">
+            <section id="items-4" class="w-full h-full py-16">
+                <div class="container padding-mx grid grid-cols-1 xl:grid-cols-2 gap-8 p-8">
+                    <div class="xl:order-2" data-aos="fade-right">
                         <img src="/public/img/section-keyfeatures.png" alt="keyfetures-img" class="flex bg-center w-full">
                     </div>
-                    <div class="flex flex-col gap-8 xl:gap-16">
+                    <div class="flex flex-col gap-8 xl:gap-16" data-aos="fade-left">
                         <div class="header-content flex flex-col gap-8">
                             <div class="flex flex-col gap-4">
-                                <h1 class="text-base uppercase text-secondary tracking-[3.2px] text-center xl:text-start">Key features</h1>
-                                <h1 class="text-3xl font-bold text-center xl:text-start">We offer best services</h1>
+                                <h3 class="header-tittle-base">Key features</h3>
+                                <h1 class="header-tittle">We offer best services</h1>
                             </div>
-                            <p class="text-base md:text-lg text-center xl:text-start leading-6 opacity-40 xl:w-3/4 w-full px-8 xl:px-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                            <p class="text-base md:text-lg text-center xl:text-start leading-6 text-opacity-40 xl:w-3/4 w-full px-8 xl:px-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
                         </div>
                         <div class="body-content flex flex-col gap-2">
-                            <div class="card-item border-2 border-gray-500 border-opacity-20 p-8 gap-8 hover:drop-shadow-xl hover:border-opacity-60 transform duration-700 rounded-card">
-                                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                            <div class="card-item border-2 border-gray-500 border-opacity-20 p-8 gap-8 hover:drop-shadow-xl hover:border-opacity-60 transform duration-700 rounded-card w-full">
+                                <div class="flex flex-col md:flex-row justify-center items-center md:justify-start gap-8">
                                     <div class="card-header w-full md:w-fit flex">
                                         <div class="p-6 rounded-card bg-orange flex text-white justify-center items-center w-[100px] h-[100px]">
                                             <svg x-show="starReview1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10">
@@ -292,14 +295,14 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="card-body flex justify-center xl:justify-start xl:items-start flex-col">
-                                        <h1 class="font-bold text-2xl">We offer best services</h1>
-                                        <p class="text-base opacity-40 text-start w-3/4 md:w-full">Lorem Ipsum is not simply random text</p>
+                                    <div class="card-body flex justify-center xl:justify-start xl:items-start flex-col w-full">
+                                        <h1 class="font-bold text-2xl w-full">We offer best services</h1>
+                                        <p class="text-base opacity-40 text-start w-full">Lorem Ipsum is not simply random text</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-item border-2 border-gray-500 border-opacity-20 p-8 gap-8 hover:drop-shadow-xl hover:border-opacity-60 transform duration-700 rounded-card">
-                                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                            <div class="card-item border-2 border-gray-500 border-opacity-20 p-8 gap-8 hover:drop-shadow-xl hover:border-opacity-60 transform duration-700 rounded-card w-full">
+                                <div class="flex flex-col md:flex-row justify-center items-center md:justify-start gap-8">
                                     <div class="card-header w-full md:w-fit flex">
                                         <div class="p-6 rounded-card bg-yellow-400 flex text-white justify-center items-center w-[100px] h-[100px]">
                                             <svg x-show="starReview1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-8">
@@ -308,14 +311,14 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="card-body flex justify-center xl:justify-start xl:items-start flex-col">
-                                        <h1 class="font-bold text-2xl">We offer best services</h1>
-                                        <p class="text-base opacity-40 text-start w-3/4 md:w-full">Lorem Ipsum is not simply random text</p>
+                                    <div class="card-body flex justify-center xl:justify-start xl:items-start flex-col w-full">
+                                        <h1 class="font-bold text-2xl w-full">We offer best services</h1>
+                                        <p class="text-base opacity-40 text-start w-full">Lorem Ipsum is not simply random text</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-item border-2 border-gray-500 border-opacity-20 p-8 gap-8 hover:drop-shadow-xl hover:border-opacity-60 transform duration-700 rounded-card">
-                                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                            <div class="card-item border-2 border-gray-500 border-opacity-20 p-8 gap-8 hover:drop-shadow-xl hover:border-opacity-60 transform duration-700 rounded-card w-full">
+                                <div class="flex flex-col md:flex-row justify-center items-center md:justify-start w-full gap-8">
                                     <div class="card-header w-full md:w-fit">
                                         <div class="p-6 rounded-card bg-secondary flex text-white justify-center items-center w-[100px] h-[100px]">
                                             <svg x-show="starReview1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10">
@@ -323,9 +326,9 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="card-body flex justify-center xl:justify-start xl:items-start flex-col">
-                                        <h1 class="font-bold text-2xl">Get discounted coupons</h1>
-                                        <p class="text-base opacity-40 text-start w-3/4 md:w-full">Lorem Ipsum is not simply random text</p>
+                                    <div class="card-body flex justify-center xl:justify-start xl:items-start flex-col w-full">
+                                        <h1 class="font-bold text-2xl w-full">Get discounted coupons</h1>
+                                        <p class="text-base opacity-40 text-start w-full">Lorem Ipsum is not simply random text</p>
                                     </div>
                                 </div>
                             </div>
@@ -333,17 +336,12 @@
                     </div>
                 </div>
             </section>
-            <section id="" class="w-full h-full py-16 border-2 border-red-500 padding-mx" style="
-            background-image: url('/public/img/background/Vector-abstrack.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        ">
-                <div class="flex flex-col gap-8 p-8 py-16">
+            <section id="" class="content-testimonial w-full h-full py-16">
+                <div class="flex flex-col padding-mx gap-8 p-8 py-16">
                     <!-- Swiper -->
                     <div class="flex flex-col gap-4 text-center justify-center items-center">
-                        <h1 class="text-base uppercase text-secondary tracking-[3.2px] text-center xl:text-start">Key features</h1>
-                        <h1 class="text-3xl font-bold text-center xl:text-start">We offer best services</h1>
+                        <h3 class="header-tittle-base">Testimonials</h3>
+                        <h1 class="header-tittle">Trust our clients</h1>
                     </div>
                     <div class="swiper mySwiper flex w-full h-full">
                         <div class="swiper-wrapper pb-16 relative">
@@ -353,7 +351,7 @@
                                         <img src="/public/img/figure-testimonial.png" alt="figure testimoni" class="rounded-full">
                                     </div>
                                     <div class="flex flex-col gap-8">
-                                        <p class="text-2xl text-secondary font-bold">Mark Smith <span class="text-2xl text-black font-light">/ Travel Enthusiast</span></p>
+                                        <p class="text-2xl text-secondary font-bold text-center">Mark Smith <span class="text-2xl text-black font-light">/ Travel Enthusiast</span></p>
                                         <div x-data="{ 
                                         starReviews: [false, false, false, false, false],
                                     }" class="flex justify-center">
@@ -369,7 +367,7 @@
                                             </template>
                                         </div>
                                     </div>
-                                    <p class="text-base md:text-lg text-center leading-6 opacity-100 w-full xl:w-3/4 px-8 xl:px-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                                    <p class="text-base md:text-lg text-center leading-6 opacity-100 w-full md:w-3/4 px-8 xl:px-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
                                 </div>
                             </div>
                             <div class="swiper-slide h-[500px]">
@@ -378,7 +376,7 @@
                                         <img src="/public/img/figure-testimonial.png" alt="figure testimoni" class="rounded-full">
                                     </div>
                                     <div class="flex flex-col gap-8">
-                                        <p class="text-2xl text-secondary font-bold">Mark Smith <span class="text-2xl text-black font-light">/ Travel Enthusiast</span></p>
+                                        <p class="text-2xl text-secondary font-bold text-center">Mark Smith <span class="text-2xl text-black font-light">/ Travel Enthusiast</span></p>
                                         <div x-data="{ 
                                         starReviews: [false, false, false, false, false],
                                     }" class="flex justify-center">
@@ -394,7 +392,7 @@
                                             </template>
                                         </div>
                                     </div>
-                                    <p class="text-base md:text-lg text-center leading-6 opacity-100 w-full xl:w-3/4 px-8 xl:px-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                                    <p class="text-base md:text-lg text-center leading-6 opacity-100 w-full md:w-3/4 px-8 xl:px-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
                                 </div>
                             </div>
                             <div class="swiper-slide h-[500px]">
@@ -403,7 +401,7 @@
                                         <img src="/public/img/figure-testimonial.png" alt="figure testimoni" class="rounded-full">
                                     </div>
                                     <div class="flex flex-col gap-8">
-                                        <p class="text-2xl text-secondary font-bold">Mark Smith <span class="text-2xl text-black font-light">/ Travel Enthusiast</span></p>
+                                        <p class="text-2xl text-secondary font-bold text-center">Mark Smith <span class="text-2xl text-black font-light">/ Travel Enthusiast</span></p>
                                         <div x-data="{ 
                                         starReviews: [false, false, false, false, false],
                                     }" class="flex justify-center">
@@ -419,7 +417,7 @@
                                             </template>
                                         </div>
                                     </div>
-                                    <p class="text-base md:text-lg text-center leading-6 opacity-100 w-full xl:w-3/4 px-8 xl:px-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                                    <p class="text-base md:text-lg text-center leading-6 opacity-100 w-full md:w-3/4 px-8 xl:px-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
                                 </div>
                             </div>
                         </div>
@@ -429,30 +427,27 @@
                     </div>
                 </div>
             </section>
-            <section id="#items-5" class="w-full h-full padding-mx py-16 xl:py-32 border-2 border-red-500">
-                <div class="container relative w-full h-full flex flex-col justify-center items-center bg-creamy rounded-card py-32 px-16">
-                    <div class="acc-img hidden md:flex">
-                        <img class="-top-10 -left-10 absolute" src="/public/img/background/subscribe/obs_1.svg" alt="background-image">
-                    </div>
-                    <div class="flex flex-col gap-8 justify-center items-center">
-                        <h3 class="uppercase text-2xl font-semibold text-secondary">subscribe to our newsletter</h3>
-                        <h1 class="text-3xl font-semibold text-black">Prepare yourself & let's explore the beauty of the world</h1>
-                    </div>
-                    <div class="w-full h-full py-32 px-8">
-                        <form action="" class="flex flex-col md:flex-row items-center justify-center gap-4">
-                            <input type="text" name="" id="" placeholder="input email" class="w-1/2 p-4 border rounded-xl">
-                            <div class="flex">
-                                <button class="px-6 py-4 border rounded-xl font-semibold bg-primary hover:bg-primary-hover transform duration-500 text-white">Subscribe</button>
-                            </div>
-                        </form>
+            <section id="#items-5" class="w-full h-full py-16 xl:py-32">
+                <div class="container w-full h-full padding-mx">
+                    <div class="bg-creamy rounded-card flex flex-col justify-center items-center gap-16 px-8 py-16 md:px-16 md:py-32">
+                        <div class="flex flex-col border w-full text-center gap-8">
+                            <h3 class="header-tittle-base">subscribe to our newsletter</h3>
+                            <h1 class="header-tittle">Prepare yourself & let's explore the beauty of the world</h1>
+                        </div>
+                        <div class="w-full border-2">
+                            <form action="" class="flex flex-col md:flex-row gap-8">
+                                <input type="text" placeholder="input email" class="p-4 border rounded-xl w-full">
+                                <button type="submit" class="border px-8 py-4 rounded-xl bg-primary font-semibold text-white">Subscribe</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="container w-full py-8 md:py-16 gap-8 md:gap-16 relative border">
-                    <div class="acc-items hidden md:flex w-full absolute -z-10">
-                        <img src="/public/img/background/subscribe/obs_2.png" alt="acc-items" class="absolute top-0 -right-40  md:-right-40 -z-10">
-                    </div>
-                    <div class="flex flex-col gap-8">
-                        <div class="flex brand-img items-center gap-3">
+                <div class=" container w-full py-8 md:py-16 padding-mx gap-8 md:gap-16">
+                    <div class="relative flex flex-col gap-8">
+                        <div class="acc-items hidden md:flex w-full absolute -z-10">
+                            <img data-aos="zoom-in" src="/public/img/background/subscribe/obs_2.png" alt="acc-items" class="absolute top-0 -right-32 -translate-x-20  -z-10">
+                        </div>
+                        <div class="flex brand-img items-center gap-3" data-aos="zoom-out">
                             <img src="/public/img/logo.svg" alt="brand-logo">
                             <h1 class="text-2xl font-bold">Travlog</h1>
                         </div>
@@ -461,17 +456,17 @@
                         </div>
                         <div class="flex gap-8">
                             <a href="#" class="flex">
-                                <img src="/public/img/social-logo/facebook.svg" alt="img-facebook">
+                                <img src="/public/img/social-logo/facebook.svg" alt="img-facebook" data-aos="zoom-in">
                             </a>
                             <a href="#" class="flex">
-                                <img src="/public/img/social-logo/twitter.svg" alt="img-twiter">
+                                <img src="/public/img/social-logo/twitter.svg" alt="img-twiter" data-aos="zoom-in" data-aos-delay="400">
                             </a>
                             <a href="#" class="flex">
-                                <img src="/public/img/social-logo/instagram.svg" alt="img-instagram">
+                                <img src="/public/img/social-logo/instagram.svg" alt="img-instagram" data-aos="zoom-in" data-aos-delay="600">
                             </a>
                         </div>
                     </div>
-                    <div class="flex flex-col md:flex-row md:gap-8 border relative w-full" x-data=" { accordion1 : true, accordion2 : false, accordion3 : false, }">
+                    <div class="flex flex-col md:flex-row md:gap-8 relative w-full" x-data=" { accordion1 : true, accordion2 : false, accordion3 : false, }">
                         <div x-on:click="accordion1 = !accordion1" class="flex flex-col w-full p-8 md:p-0 mt-8 md:mt-16 border rounded-xl md:border-none cursor-pointer">
                             <div class="tittle flex justify-between w-full">
                                 <h1 class="flex text-xl font-bold">Company</h1>
@@ -548,10 +543,16 @@
         </main>
         <!-- Alpine JS -->
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <!-- Init Swiper -->
         <script>
+            AOS.init()
+            AOS.init({
+                duration: 1000,
+            });
             var swiper = new Swiper(".mySwiper", {
                 spaceBetween: 30,
                 loop: true,

@@ -24,3 +24,11 @@
 .rounded-card {
   border-radius: 32px;
 }
+
+.header-tittle-base {
+  @apply text-base xl:text-2xl font-semibold text-secondary uppercase tracking-[4.6px] text-center md:text-start;
+}
+
+.header-tittle {
+  @apply text-3xl xl:text-[55px] xl:leading-[66px] font-bold text-center md:text-start;
+}
