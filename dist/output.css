@@ -669,6 +669,14 @@ h1 {
   top: 25%;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -928,6 +936,10 @@ h1 {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[1185px\] {
+  width: 1185px;
 }
 
 .flex-shrink {
@@ -2197,6 +2209,11 @@ h1 {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pb-16 {

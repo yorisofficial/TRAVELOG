@@ -333,13 +333,13 @@
                     </div>
                 </div>
             </section>
-            <section id="items-5" class="w-full h-full py-16 border-2 border-red-500" style="
+            <section id="items-5" class="w-full h-full py-16 border-2 border-red-500 padding-mx" style="
             background-image: url('/public/img/background/Vector-abstrack.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
         ">
-                <div class="padding-mx flex flex-col gap-8 p-8 py-16">
+                <div class="flex flex-col gap-8 p-8 py-16">
                     <!-- Swiper -->
                     <div class="flex flex-col gap-4 text-center justify-center items-center">
                         <h1 class="text-base uppercase text-secondary tracking-[3.2px] text-center xl:text-start">Key features</h1>
@@ -426,6 +426,25 @@
                         <div class="swiper-next"></div>
                         <div class="swiper-prev"></div>
                         <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="container flex flex-col w-full h-full py-16 px-8 gap-16">
+                    <div class="flex flex-col text-center gap-8">
+                        <h3 class="text-xl font-bold text-secondary uppercase">subscribe to our newsletter</h3>
+                        <h1 class="text-3xl font-bold text-black">Prepare yourself & let’s explore the beauty of the world</h1>
+                    </div>
+                    <div class="w-full flex relative border">
+                        <form x-on:click="formInput" action="" class="w-full flex flex-col gap-8">
+                            <label for="" class="flex items-center gap-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                                </svg>
+                                <span>Your Email</span>
+                            </label>
+                            <input type="text" placeholder="Your Email" class="w-full p-4 rounded-xl border-2 border-black">
+                            <button class="w-full bg-primary py-6 font-bold text-white rounded-xl">Subscribe</button>
+                        </form>
                     </div>
                 </div>
             </section>
