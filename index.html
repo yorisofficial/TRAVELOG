@@ -16,7 +16,9 @@
     <body class="scroll-smooth">
         <header class="border-2">
             <nav x-data="{ navBar : false, isScrolled : false }" x-on:click.outside="navBar = false" x-init="window.addEventListener('scroll', () => {
-                 isScrolled = (window.scrollY > 0); })" x-bind:class="{ 'fixed bg-white drop-shadow-xl': isScrolled, 'sticky': !isScrolled }" class="w-full sticky top-0 z-10 padding-mx xl:flex">
+                 isScrolled = (window.scrollY > 100); })" x-bind:class="{ 
+                    'fixed bg-white drop-shadow-xl': isScrolled, 'sticky': !isScrolled 
+                }" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="w-full sticky top-0 z-10 padding-mx xl:flex">
                 <!-- Logo & mobile -->
                 <div class="flex justify-between items-center w-full xl:w-fit">
                     <button x-on:click="navBar = !navBar" class="md:order-1 order-2 p-3 bg-primary hover:bg-primary-hover rounded-xl md:flex items-center text-white xl:hidden transform duration-700">
@@ -335,8 +337,9 @@
             background-image: url('/public/img/background/Vector-abstrack.svg');
             background-repeat: no-repeat;
             background-position: center;
+            background-size: cover;
         ">
-                <div class="container padding-mx flex flex-col gap-8 p-8 py-16">
+                <div class="padding-mx flex flex-col gap-8 p-8 py-16">
                     <!-- Swiper -->
                     <div class="flex flex-col gap-4 text-center justify-center items-center">
                         <h1 class="text-base uppercase text-secondary tracking-[3.2px] text-center xl:text-start">Key features</h1>
@@ -431,7 +434,7 @@
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <!-- Initialize Swiper -->
+        <!-- Init Swiper -->
         <script>
             var swiper = new Swiper(".mySwiper", {
                 spaceBetween: 30,
