@@ -431,7 +431,7 @@
             </section>
             <section id="#items-5" class="w-full h-full padding-mx py-16 xl:py-32 border-2 border-red-500">
                 <div class="container relative w-full h-full flex flex-col justify-center items-center bg-creamy rounded-card py-32 px-16">
-                    <div class="acc-img">
+                    <div class="acc-img hidden md:flex">
                         <img class="-top-10 -left-10 absolute" src="/public/img/background/subscribe/obs_1.svg" alt="background-image">
                     </div>
                     <div class="flex flex-col gap-8 justify-center items-center">
@@ -447,7 +447,103 @@
                         </form>
                     </div>
                 </div>
-                <div class="container"></div>
+                <div class="container w-full py-8 md:py-16 gap-8 md:gap-16 relative border">
+                    <div class="acc-items hidden md:flex w-full absolute -z-10">
+                        <img src="/public/img/background/subscribe/obs_2.png" alt="acc-items" class="absolute top-0 -right-40  md:-right-40 -z-10">
+                    </div>
+                    <div class="flex flex-col gap-8">
+                        <div class="flex brand-img items-center gap-3">
+                            <img src="/public/img/logo.svg" alt="brand-logo">
+                            <h1 class="text-2xl font-bold">Travlog</h1>
+                        </div>
+                        <div class="flex">
+                            <p class="text-base xl:text-xl w-3/4 text-black opacity-40">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                        </div>
+                        <div class="flex gap-8">
+                            <a href="#" class="flex">
+                                <img src="/public/img/social-logo/facebook.svg" alt="img-facebook">
+                            </a>
+                            <a href="#" class="flex">
+                                <img src="/public/img/social-logo/twitter.svg" alt="img-twiter">
+                            </a>
+                            <a href="#" class="flex">
+                                <img src="/public/img/social-logo/instagram.svg" alt="img-instagram">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:gap-8 border relative w-full" x-data=" { accordion1 : true, accordion2 : false, accordion3 : false, }">
+                        <div x-on:click="accordion1 = !accordion1" class="flex flex-col w-full p-8 md:p-0 mt-8 md:mt-16 border rounded-xl md:border-none cursor-pointer">
+                            <div class="tittle flex justify-between w-full">
+                                <h1 class="flex text-xl font-bold">Company</h1>
+                                <!-- icon accordion -->
+                                <svg x-show="!accordion1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                                <svg x-show="accordion1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
+                            <div x-bind:class="{ 
+                                'hidden': !accordion1,
+                                'md:flex': !accordion1,
+                            }" class="">
+                                <!-- description -->
+                                <div class="flex flex-col gap-8 py-8">
+                                    <a href="" class="text-base">About</a>
+                                    <a href="" class="text-base">Career</a>
+                                    <a href="" class="text-base">Mobile</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div x-on:click="accordion2 = !accordion2" class="flex flex-col w-full p-8 md:p-0 mt-8 md:mt-16 border rounded-xl md:border-none cursor-pointer">
+                            <div class="tittle flex justify-between w-full">
+                                <h1 class="flex text-xl font-bold">Contact Us</h1>
+                                <!-- icon accordion -->
+                                <svg x-show="!accordion2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                                <svg x-show="accordion2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
+                            <div x-bind:class="{ 
+                                'hidden': !accordion2,
+                                'md:flex' : !accordion2,
+                            }" class="">
+                                <!-- description -->
+                                <div class="flex flex-col gap-8 py-8">
+                                    <a href="" class="text-base">Why Travlog?</a>
+                                    <a href="" class="text-base">Partner with us</a>
+                                    <a href="" class="text-base">FAQ's</a>
+                                    <a href="" class="text-base">Blog</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div x-on:click="accordion3 = !accordion3" class="flex flex-col w-full p-8 md:p-0 mt-8 md:mt-16 border rounded-xl md:border-none cursor-pointer">
+                            <div class="tittle flex justify-between w-full">
+                                <h1 class="flex text-xl font-bold">Meet Us</h1>
+                                <!-- icon accordion -->
+                                <svg x-show="!accordion3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                                <svg x-show="accordion3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
+                            <div x-bind:class="{ 
+                                'hidden': !accordion3,
+                                'md:flex' : !accordion3,
+                            }" class="">
+                                <!-- description -->
+                                <div class="flex flex-col gap-8 py-8">
+                                    <a href="" class="text-base">+00 92 1234 56789</a>
+                                    <a href="" class="text-base">info@travlog.com</a>
+                                    <a href="" class="text-base">205. R Street, <br>New York BD23200</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <!-- Alpine JS -->

@@ -649,6 +649,14 @@ h1 {
   inset: -0.25rem;
 }
 
+.-left-10 {
+  left: -2.5rem;
+}
+
+.-top-10 {
+  top: -2.5rem;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -669,12 +677,20 @@ h1 {
   top: 25%;
 }
 
-.-top-10 {
-  top: -2.5rem;
+.-right-80 {
+  right: -20rem;
 }
 
-.-left-10 {
-  left: -2.5rem;
+.-right-40 {
+  right: -10rem;
+}
+
+.-right-20 {
+  right: -5rem;
+}
+
+.-right-32 {
+  right: -8rem;
 }
 
 .isolate {
@@ -902,6 +918,10 @@ h1 {
   height: 100vh;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -936,10 +956,6 @@ h1 {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .flex-shrink {
@@ -992,6 +1008,21 @@ h1 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-x-0 {
+  --tw-translate-x: -0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-32 {
+  --tw-translate-x: -8rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-52 {
+  --tw-translate-x: -13rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-100 {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
@@ -1022,6 +1053,10 @@ h1 {
 
 .transform-none {
   transform: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .touch-auto {
@@ -1494,6 +1529,10 @@ h1 {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -2937,6 +2976,10 @@ h1 {
     top: 33.333333%;
   }
 
+  .md\:-right-40 {
+    right: -10rem;
+  }
+
   .md\:order-1 {
     order: 1;
   }
@@ -2949,12 +2992,20 @@ h1 {
     order: 3;
   }
 
+  .md\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .md\:block {
     display: block;
   }
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:w-1\/2 {
@@ -2992,6 +3043,18 @@ h1 {
 
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .md\:border-none {
+    border-style: none;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
   }
 
   .md\:p-6 {
@@ -3033,10 +3096,6 @@ h1 {
 
   .xl\:col-span-1 {
     grid-column: span 1 / span 1;
-  }
-
-  .xl\:m-32 {
-    margin: 8rem;
   }
 
   .xl\:flex {
@@ -3130,5 +3189,10 @@ h1 {
 
   .xl\:text-start {
     text-align: start;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
