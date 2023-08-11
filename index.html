@@ -11,6 +11,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <!-- Alternative CSS -->
+        <link rel="stylesheet" href="/style.css">
         <title>TRAVLOG</title>
     </head>
     <body>
@@ -89,8 +91,8 @@
                                 <p class="text-center xl:text-start text-base text-opacity-40 md:w-1/2 xl:w-2/3">We always make our customer happy by providing as many choices as possible </p>
                             </div>
                             <div class="flex flex-col md:flex-row justify-center xl:justify-start gap-2">
-                                <button class="px-8 py-6 border border-primary bg-primary hover:bg-primary-hover text-white font-semibold rounded-full drop-shadow-xl transform duration-700">Get Started</button>
-                                <button class="z-5 px-8 py-6 border border-black hover:drop-shadow-xl bg-white border-opacity-20 font-semibold rounded-full flex items-center justify-center transform duration-700">
+                                <button class="px-8 py-6 border-primary bg-primary hover:bg-primary-hover text-white font-semibold rounded-full drop-shadow-xl transform duration-700">Get Started</button>
+                                <button class="z-5 px-8 py-6 border-black hover:drop-shadow-xl bg-white border-2 border-opacity-20 font-semibold rounded-full flex items-center justify-center transform duration-700">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
@@ -121,7 +123,7 @@
                     </div>
             </section>
             <section id="" class="w-full h-full padding-mx">
-                <div class="container w-full mx-auto flex flex-col xl:flex-row gap-8 md:gap-16 xl:gap-0 py-8 md:py-16">
+                <div class="container w-full mx-auto flex flex-col md:flex-row gap-8 md:gap-16 xl:gap-0 py-8 md:py-16">
                     <div class="header-content xl:w-2/3 flex flex-col justify-center text-center gap-4">
                         <h3 class="xl:text-start text-base font-semibold text-secondary uppercase">Services</h3>
                         <h1 class="xl:text-start text-3xl font-bold">Our top value categories for you</h1>
@@ -166,50 +168,50 @@
                         <h1 class="text-base uppercase text-secondary tracking-[3.2px] text-center">Top Destination</h1>
                         <h1 class="text-3xl font-bold text-center">Explore top destination</h1>
                     </div>
-                    <div class="body">
-                        <div class="card grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
-                            <div class="card-item flex flex-col">
-                                <img src="/public/img/pricelist/img-1.png" alt="card-img" class="w-full">
-                                <div class="flex flex-col p-8 bg-white border-2 hover:drop-shadow-xl transform duration-700 rounded-b-[32px]">
-                                    <div class="flex flex-col gap-4">
+                    <div class="body h-full">
+                        <div class="card grid grid-cols-1 xl:h-full md:grid-cols-3 gap-8 md:gap-4">
+                            <div class="card-item flex flex-col xl:h-full hover:drop-shadow-xl transform duration-700 ">
+                                <img src="/public/img/pricelist/img-1.png" alt="card-img" class="w-full bg-center bg-no-repeat">
+                                <div class="flex flex-col p-8 bg-white h-full border-2 rounded-b-[32px]">
+                                    <div class="flex flex-col gap-4 h-full">
                                         <h1 class="text-2xl font-bold text-secondary">$550.16</h1>
-                                        <h1 class="text-xl font-bold border">Paradise Beach, Bantayan Island</h1>
+                                        <h1 class="text-xl font-bold">Paradise Beach, Bantayan Island</h1>
                                     </div>
-                                    <p class="text-base border">Rome, Italy</p>
-                                    <div class="mt-4 border">
-                                        <h1 class="text-xl font-bold text-[#FF5722] flex items-center">4.5 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <p class="text-base">Rome, Italy</p>
+                                    <div class="mt-4">
+                                        <h1 class="text-xl font-bold text-orange flex items-center">4.5 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                                 <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                                             </svg>
                                         </h1>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-item flex flex-col">
-                                <img src="/public/img/pricelist/img-1.png" alt="card-img" class="w-full">
-                                <div class="flex flex-col p-8 bg-white border-2 hover:drop-shadow-xl transform duration-700 rounded-b-[32px]">
-                                    <div class="flex flex-col gap-4">
+                            <div class="card-item flex flex-col xl:h-full hover:drop-shadow-xl transform duration-700 ">
+                                <img src="/public/img/pricelist/img-2.png" alt="card-img" class="w-full bg-center bg-no-repeat xl:h-[288px]">
+                                <div class="flex flex-col p-8 bg-white h-full border-2 rounded-b-[32px]">
+                                    <div class="flex flex-col gap-4 h-full">
                                         <h1 class="text-2xl font-bold text-secondary">$20.99</h1>
                                         <h1 class="text-xl font-bold">Ocean with full of Colors</h1>
                                     </div>
                                     <p class="text-base">Maldives</p>
-                                    <div class="mt-4 border">
-                                        <h1 class="text-xl font-bold text-[#FF5722] flex items-center">4.8 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <div class="mt-4">
+                                        <h1 class="text-xl font-bold text-orange flex items-center">4.8 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                                 <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                                             </svg>
                                         </h1>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-item flex flex-col">
-                                <img src="/public/img/pricelist/img-3.png" alt="card-img" class="w-full">
-                                <div class="flex flex-col p-8 bg-white border-2 hover:drop-shadow-xl transform duration-700 rounded-b-[32px]">
-                                    <div class="flex flex-col gap-4">
+                            <div class="card-item flex flex-col xl:h-full hover:drop-shadow-xl transform duration-700 ">
+                                <img src="/public/img/pricelist/img-3.png" alt="card-img" class="w-full bg-center bg-no-repeat">
+                                <div class="flex flex-col p-8 bg-white h-full border-2 rounded-b-[32px]">
+                                    <div class="flex flex-col gap-4 h-full">
                                         <h1 class="text-2xl font-bold text-secondary">$150.99</h1>
                                         <h1 class="text-xl font-bold">Mountain View, Above the cloud</h1>
                                     </div>
                                     <p class="text-base">United Arab Emeries </p>
-                                    <div class="mt-4 border">
-                                        <h1 class="text-xl font-bold text-[#FF5722] flex items-center">5.0<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                    <div class="mt-4">
+                                        <h1 class="text-xl font-bold text-orange flex items-center">5.0<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                                 <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                                             </svg>
                                         </h1>
@@ -221,44 +223,131 @@
                 </div>
             </section>
         </main>
-        <section class="w-full h-screen relative  flex flex-col padding-mx">
-            <div class="acc-content absolute top-1/4 -translate-y-15 -z-10 right-0 hidden xl:block">
-                <img src="/public/img/background/travel-point.png" alt="acc-content">
-            </div>
-            <div class="container grid grid-cols-1 xl:grid-cols-3 py-8 gap-16 xl:gap-0">
-                <div class="img-content xl:col-span-2">
-                    <img src="/public/img/dream-img.png" alt="dream-img" class="w-[871px]">
+        <section class="w-full h-full relative padding-mx">
+            <div class="container w-full flex flex-col xl:flex-row gap-16 xl:py-16">
+                <div class="w-full">
+                    <img src="/public/img/dream-img.png" alt="TopDestination">
                 </div>
-                <div class="header flex flex-col gap-8 xl:gap-16">
+                <div class="xl:w-2/3 flex flex-col gap-16">
                     <div class="flex flex-col gap-8">
-                        <div class="flex flex-col">
+                        <div class="flex flex-col gap-4">
                             <h1 class="text-base uppercase text-secondary tracking-[3.2px] text-center xl:text-start">Travel Point</h1>
-                            <h1 class="text-3xl font-bold text-center xl:text-start">We helping you find your dream location</h1>
+                            <h1 class="text-3xl font-bold text-center xl:text-start xl:w-3/4">We helping you find your dream location</h1>
+                        </div>
+                        <p class="text-base text-center xl:text-start opacity-40">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                    </div>
+                    <div class="grid grid-cols-1 w-full gap-8">
+                        <div class="grid w-full grid-cols-2 xl:grid-cols-2 gap-8">
+                            <div class="card-detail w-full flex flex-col items-center justify-center rounded-card p-8 bg-white hover:drop-shadow-xl transform duration-700 border">
+                                <div class="text-center flex flex-col gap-4">
+                                    <h1 class="text-2xl text-orange font-bold">500+</h1>
+                                    <p class="text-base text-center w-full">Holiday Package</p>
+                                </div>
+                            </div>
+                            <div class="card-detail w-full flex flex-col items-center justify-center rounded-card p-8 bg-white hover:drop-shadow-xl transform duration-700 border">
+                                <div class="text-center flex flex-col gap-4">
+                                    <h1 class="text-2xl text-orange font-bold">100</h1>
+                                    <p class="text-base text-center w-full">Luxury Hotel</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid w-full grid-cols-2 xl:grid-cols-2 gap-8">
+                            <div class="card-detail w-full flex flex-col items-center justify-center rounded-card p-8 bg-white hover:drop-shadow-xl transform duration-700 border">
+                                <div class="text-center flex flex-col gap-4">
+                                    <h1 class="text-2xl text-orange font-bold">7</h1>
+                                    <p class="text-base text-center w-full">Premium Airlines</p>
+                                </div>
+                            </div>
+                            <div class="card-detail w-full flex flex-col items-center justify-center rounded-card p-8 bg-white hover:drop-shadow-xl transform duration-700 border">
+                                <div class="text-center flex flex-col gap-4">
+                                    <h1 class="text-2xl text-orange font-bold">2k+</h1>
+                                    <p class="text-base text-center w-full">Happy Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Key features -->
+        <section id="" class="w-full h-full padding-mx py-16">
+            <div class="container grid grid-cols-1 xl:grid-cols-2 gap-8 p-8">
+                <div class="xl:order-2 border">
+                    <img src="/public/img/section-keyfeatures.png" alt="keyfetures-img" class="flex bg-center w-full">
+                </div>
+                <div class="flex flex-col gap-8 xl:gap-16">
+                    <div class="header-content flex flex-col gap-8">
+                        <div class="flex flex-col gap-4">
+                            <h1 class="text-base uppercase text-secondary tracking-[3.2px] text-center xl:text-start">Key features</h1>
+                            <h1 class="text-3xl font-bold text-center xl:text-start">We offer best services</h1>
                         </div>
                         <p class="text-base md:text-lg text-center xl:text-start leading-6 opacity-40 w-full px-8 xl:px-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-                        <div class="flex flex-col w-full gap-4 md:gap-8">
-                            <div class="w-full flex flex-col justify-center gap-4 p-8 rounded-card border-2">
-                                <h1 class="text-2xl font-semibold text-[#FF5722] text-center">500+</h1>
-                                <h1 class="text-2xl text-center">Holiday Package</h1>
-                            </div>
-                            <div class="w-full flex flex-col justify-center gap-4 p-8 rounded-card border-2">
-                                <h1 class="text-2xl font-semibold text-[#FF5722] text-center">100</h1>
-                                <h1 class="text-2xl text-center">Luxury Hotel</h1>
+                    <div class="body-content flex flex-col gap-2">
+                        <div class="card-item border-2 border-gray-500 border-opacity-0 p-8 gap-8 hover:border-opacity-60 transform duration-700 rounded-card">
+                            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                                <div class="card-header w-full md:w-fit flex">
+                                    <div class="p-6 rounded-card bg-orange flex text-white justify-center items-center w-[100px] h-[100px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10">
+                                            <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-body flex justify-center xl:justify-start xl:items-start flex-col">
+                                    <h1 class="font-bold text-2xl">We offer best services</h1>
+                                    <p class="text-base opacity-40 text-start w-3/4 md:w-full">Lorem Ipsum is not simply random text</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full gap-4 md:gap-8">
-                            <div class="w-full flex flex-col justify-center gap-4 p-8 rounded-card border-2">
-                                <h1 class="text-2xl font-semibold text-[#FF5722] text-center">7</h1>
-                                <h1 class="text-2xl text-center">Premium Airlines</h1>
+                        <div class="card-item border-2 border-gray-500 border-opacity-0 p-8 gap-8 hover:border-opacity-60 transform duration-700 rounded-card">
+                            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                                <div class="card-header w-full md:w-fit flex">
+                                    <div class="p-6 rounded-card bg-yellow-400 flex text-white justify-center items-center w-[100px] h-[100px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-8">
+                                            <path d="M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+                                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-body flex justify-center xl:justify-start xl:items-start flex-col">
+                                    <h1 class="font-bold text-2xl">We offer best services</h1>
+                                    <p class="text-base opacity-40 text-start w-3/4 md:w-full">Lorem Ipsum is not simply random text</p>
+                                </div>
                             </div>
-                            <div class="w-full flex flex-col justify-center gap-4 p-8 rounded-card border-2">
-                                <h1 class="text-2xl font-semibold text-[#FF5722] text-center">2k+</h1>
-                                <h1 class="text-2xl text-center">Happy Customer</h1>
+                        </div>
+                        <div class="card-item border-2 border-gray-500 border-opacity-0 p-8 gap-8 hover:border-opacity-60 transform duration-700 rounded-card">
+                            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                                <div class="card-header w-full md:w-fit">
+                                    <div class="p-6 rounded-card bg-secondary flex text-white justify-center items-center w-[100px] h-[100px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10">
+                                            <path fill-rule="evenodd" d="M1.5 6.375c0-1.036.84-1.875 1.875-1.875h17.25c1.035 0 1.875.84 1.875 1.875v3.026a.75.75 0 01-.375.65 2.249 2.249 0 000 3.898.75.75 0 01.375.65v3.026c0 1.035-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 17.625v-3.026a.75.75 0 01.374-.65 2.249 2.249 0 000-3.898.75.75 0 01-.374-.65V6.375zm15-1.125a.75.75 0 01.75.75v.75a.75.75 0 01-1.5 0V6a.75.75 0 01.75-.75zm.75 4.5a.75.75 0 00-1.5 0v.75a.75.75 0 001.5 0v-.75zm-.75 3a.75.75 0 01.75.75v.75a.75.75 0 01-1.5 0v-.75a.75.75 0 01.75-.75zm.75 4.5a.75.75 0 00-1.5 0V18a.75.75 0 001.5 0v-.75zM6 12a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H6.75A.75.75 0 016 12zm.75 2.25a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="card-body flex justify-center xl:justify-start xl:items-start flex-col">
+                                    <h1 class="font-bold text-2xl">Get discounted coupons</h1>
+                                    <p class="text-base opacity-40 text-start w-3/4 md:w-full">Lorem Ipsum is not simply random text</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="" class="w-full h-screen padding-mx py-16 border-2 border-red-500">
+            <div class="container testimonial-content grid grid-cols-1 xl:grid-cols-2 gap-8 p-8">
+                <div class="header-content flex flex-col gap-8">
+                    <div class="flex flex-col gap-4">
+                        <h1 class="text-base uppercase text-secondary tracking-[3.2px] text-center xl:text-start">Testimonials</h1>
+                        <h1 class="text-3xl font-bold text-center xl:text-start">Trust our clients</h1>
+                    </div>
+                    <div class="">
+                        <img src="/public/img/figure-testimonial.svg" alt="figure-testimonial">
+                    </div>
+                    <div class="">
+                        <h1 class="font-bold text-orange">Mark Smith <span class="text-black">/ Travel Enthusiast</span></h1>
+                    </div>
+                    <p class="text-base md:text-lg text-center xl:text-start leading-6 opacity-40 w-full px-8 xl:px-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
                 </div>
             </div>
         </section>
