@@ -79,10 +79,10 @@
             <section id="items-1" class="w-full h-full flex justify-center items-center padding-mx">
                 <div class="container">
                     <div class="grid grid-cols-1 xl:grid-cols-2 py-8 items-center justify-center">
-                        <div class="herosection flex xl:order-2 z-5" data-aos="fade-left">
+                        <div class="herosection flex xl:order-2 z-5">
                             <img src="./public/img/hero-img.svg" alt="hero-images" height="100%" width="100%">
                         </div>
-                        <div class="flex flex-col w-full xl:w-3/4" data-aos="fade-right">
+                        <div class="flex flex-col w-full xl:w-3/4">
                             <div class="w-full flex justify-center xl:justify-start">
                                 <button class="text-base font-semibold px-8 py-4 bg-white text-secondary flex rounded-full drop-shadow-xl hover:bg-secondary hover:text-white transform duration-700">Explore the world! <span class="ml-4">
                                         <svg x-show="starReview1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -173,53 +173,62 @@
                         <h3 class="header-tittle-base">Top Destination</h3>
                         <h1 class="header-tittle">Explore top destination</h1>
                     </div>
-                    <div class="body h-full">
-                        <div class="card grid grid-cols-1 xl:h-full md:grid-cols-3 gap-8 md:gap-4">
-                            <div class="card-item flex flex-col xl:h-full hover:drop-shadow-xl transform duration-700 ">
-                                <img src="./public/img/pricelist/img-1.png" alt="card-img" class="w-full bg-center bg-no-repeat">
-                                <div class="flex flex-col p-8 bg-white h-full border-2 rounded-b-[32px]">
-                                    <div class="flex flex-col gap-4 h-full">
-                                        <h1 class="text-2xl font-bold text-secondary" data-aos="zoom-in">$550.16</h1>
-                                        <h1 class="text-xl font-bold">Paradise Beach, Bantayan Island</h1>
+                    <div class="body w-full h-full">
+                        <div class="card grid grid-cols-1 xl:grid-cols-3 w-full h-full gap-4 items-start justify-center">
+                            <div class="card-items flex flex-col w-full h-full hover:scale-105 hover:drop-shadow-xl transform duration-700">
+                                <div class="header w-full">
+                                    <img src="./public/img/pricelist/img-1.png" alt="destinasi" width="400px" height="300px" class="w-full h-[300px] object-cover rounded-t-xl">
+                                </div>
+                                <div class="body flex flex-col p-8 border-2 bg-white rounded-b-xl">
+                                    <div class="flex gap-2 w-full justify-between">
+                                        <h1 class="text-2xl font-bold w-3/4">Paradise Beach, Bantayan Island</h1>
+                                        <h1 class="text-pink-600 font-bold text-2xl">$550.16</h1>
                                     </div>
                                     <p class="text-base">Rome, Italy</p>
-                                    <div class="mt-4">
-                                        <h1 class="text-xl font-bold text-orange flex items-center">4.5 <svg x-show="starReview1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                                            </svg>
-                                        </h1>
+                                    <div class="startPoint flex items-center text-orange gap-2">
+                                        <span class="text-xl font-bold">4.8</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star-filled" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" stroke-width="0" fill="currentColor"></path>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-item flex flex-col xl:h-full hover:drop-shadow-xl transform duration-700 ">
-                                <img src="./public/img/pricelist/img-2.png" alt="card-img" class="w-full bg-center bg-no-repeat xl:h-[288px]">
-                                <div class="flex flex-col p-8 bg-white h-full border-2 rounded-b-[32px]">
-                                    <div class="flex flex-col gap-4 h-full">
-                                        <h1 class="text-2xl font-bold text-secondary" data-aos="zoom-in">$20.99</h1>
-                                        <h1 class="text-xl font-bold">Ocean with full of Colors</h1>
+                            <div class="card-items flex flex-col w-full h-full hover:scale-105 hover:drop-shadow-xl transform duration-700">
+                                <div class="header w-full">
+                                    <img src="./public/img/pricelist/img-2.png" alt="destinasi" width="400px" height="300px" class="w-full h-[300px] object-cover rounded-t-xl">
+                                </div>
+                                <div class="body flex flex-col p-8 border-2 bg-white rounded-b-xl">
+                                    <div class="flex gap-2 w-full justify-between">
+                                        <h1 class="text-2xl font-bold w-3/4">Ocean with full of Colors</h1>
+                                        <h1 class="text-pink-600 font-bold text-2xl">$20.99</h1>
                                     </div>
                                     <p class="text-base">Maldives</p>
-                                    <div class="mt-4">
-                                        <h1 class="text-xl font-bold text-orange flex items-center">4.8 <svg x-show="starReview1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                                            </svg>
-                                        </h1>
+                                    <div class="startPoint flex items-center text-orange gap-2">
+                                        <span class="text-xl font-bold">4.5</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star-filled" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" stroke-width="0" fill="currentColor"></path>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-item flex flex-col xl:h-full hover:drop-shadow-xl transform duration-700 ">
-                                <img src="./public/img/pricelist/img-3.png" alt="card-img" class="w-full bg-center bg-no-repeat">
-                                <div class="flex flex-col p-8 bg-white h-full border-2 rounded-b-[32px]">
-                                    <div class="flex flex-col gap-4 h-full">
-                                        <h1 class="text-2xl font-bold text-secondary" data-aos="zoom-in">$150.99</h1>
-                                        <h1 class="text-xl font-bold">Mountain View, Above the cloud</h1>
+                            <div class="card-items flex flex-col w-full h-full hover:scale-105 hover:drop-shadow-xl transform duration-700">
+                                <div class="header w-full">
+                                    <img src="./public/img/pricelist/img-3.png" alt="destinasi" width="400px" height="300px" class="w-full h-[300px] object-cover rounded-t-xl">
+                                </div>
+                                <div class="body flex flex-col p-8 border-2 bg-white rounded-b-xl">
+                                    <div class="flex gap-2 w-full justify-between">
+                                        <h1 class="text-2xl font-bold w-3/4">Mountain View, Above the cloud</h1>
+                                        <h1 class="text-pink-600 font-bold text-2xl">$150.99</h1>
                                     </div>
                                     <p class="text-base">United Arab Emeries </p>
-                                    <div class="mt-4">
-                                        <h1 class="text-xl font-bold text-orange flex items-center">5.0<svg x-show="starReview1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                                            </svg>
-                                        </h1>
+                                    <div class="startPoint flex items-center text-orange gap-2">
+                                        <span class="text-xl font-bold">5.0</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star-filled" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" stroke-width="0" fill="currentColor"></path>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
@@ -277,7 +286,7 @@
             <section id="items-4" class="w-full h-full py-16">
                 <div class="container padding-mx grid grid-cols-1 xl:grid-cols-2 gap-8 p-8">
                     <div class="xl:order-2" data-aos="fade-right">
-                        <img src="./public/img/section-keyfeatures.png" alt="keyfetures-img" class="flex bg-center w-full">
+                        <img src="./public/img/section-keyfeatures.png" alt="keyfetures-img" class="w-full h-full object-contain">
                     </div>
                     <div class="flex flex-col gap-8 xl:gap-16" data-aos="fade-left">
                         <div class="header-content flex flex-col gap-8">
@@ -338,8 +347,14 @@
                     </div>
                 </div>
             </section>
-            <section id="" class="content-testimonial w-screen h-fit py-16 bg-no-repeat border-2" style="background-image: url('/public/img/background/background-abstraks2.svg');">
-                <div class="flex flex-col padding-mx gap-8 p-8 py-16">
+            <section id="" class="content-testimonial w-full h-full py-16 border-2" style="
+                background-image: url('/public/img/background/Vector-abstrack.svg');
+                background-repeat: no-repeat;
+                object-fit: cover;
+                background-position: center;
+                background-size: cover;
+            ">
+                <div class="flex flex-col px-32 w-full">
                     <!-- Swiper -->
                     <div class="flex flex-col gap-4 text-center justify-center items-center">
                         <h3 class="header-tittle-base">Testimonials</h3>
