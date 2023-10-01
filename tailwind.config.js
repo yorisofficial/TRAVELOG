@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './**/*.{html,js}'
+    './**/*.{html, js}',
   ],
   theme: {
     extend: {
@@ -14,7 +14,7 @@ module.exports = {
         'secondary': '#F85E9F',
         'orange': '#FF5722',
         'creamy': 'rgba(250, 205, 73, 0.08)',
-      }
+      },
     },
   },
   plugins: [],
