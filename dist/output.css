@@ -736,10 +736,6 @@ h1 {
   width: 75%;
 }
 
-.w-40 {
-  width: 10rem;
-}
-
 .w-6 {
   width: 1.5rem;
 }
@@ -756,12 +752,8 @@ h1 {
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .-translate-x-20 {
@@ -793,10 +785,6 @@ h1 {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -845,10 +833,6 @@ h1 {
 
 .gap-\[64px\] {
   gap: 64px;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .scroll-smooth {
@@ -1315,25 +1299,13 @@ h1 {
     width: 75%;
   }
 
+  .md\:w-\[180px\] {
+    width: 180px;
+  }
+
   .md\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .md\:w-1\/3 {
-    width: 33.333333%;
-  }
-
-  .md\:w-\[240px\] {
-    width: 240px;
-  }
-
-  .md\:w-\[200px\] {
-    width: 200px;
-  }
-
-  .md\:w-\[180px\] {
-    width: 180px;
   }
 
   .md\:flex-row {
@@ -1352,12 +1324,12 @@ h1 {
     gap: 1rem;
   }
 
-  .md\:gap-8 {
-    gap: 2rem;
-  }
-
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:border-none {
@@ -1430,10 +1402,6 @@ h1 {
   .xl\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .xl\:w-\[200px\] {
-    width: 200px;
   }
 
   .xl\:grid-cols-2 {
